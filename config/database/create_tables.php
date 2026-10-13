@@ -1,16 +1,16 @@
 <?php
 require_once __DIR__ . '/db.php';
 
-// Création de la table users
-// $query = "CREATE TABLE users (
-//     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//     username VARCHAR(30) NOT NULL,
-//     email VARCHAR(50) NOT NULL,
-//     password VARCHAR(255) NOT NULL,
-//     token VARCHAR(255),
-//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-// )";
-// $conn->query($query);
+//Creating the table users
+$query = "CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    token VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
+$conn->query($query);
 
 // Création de la table company
 // $query = "CREATE TABLE companies (
